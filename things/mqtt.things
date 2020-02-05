@@ -1,4 +1,4 @@
-//Bridge mqtt:broker:broker "MQTTBroker" [ host="127.0.0.1", port=1883, secure=false, username="mqttuser", password="mqttpasswort" ] 
+//Bridge mqtt:broker:broker "MQTTBroker" [ host="127.0.0.1", port=8883, secure=true, username="mqttuser", password="mqttpasswort" ] 
 Bridge mqtt:broker:broker "MQTTBroker" [ host="127.0.0.1", port=1883, secure=false ] 
 { 
 	Thing mqtt:topic:Szaehler "Stromzaehler" { 
