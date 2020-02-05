@@ -1,4 +1,4 @@
 Group    Group
-Number   EG_HWR_Stromzaehler_Count         "Stromzähler Count  [%d]"                   (Group)                  {channel="mqtt:topic:Szaehler:szCount"}
-Number   EG_HWR_Stromzaehler_Total         "Stromzähler Total [%d]"                   (Group)                  {channel="mqtt:topic:Szaehler:szTotal"}
-Number   EG_HWR_Stromzaehler_Time         "Stromzähler Time [%d]"                   (Group)                  {channel="mqtt:topic:Szaehler:szTime"}
+Number   Stromzaehler_Count         "Stromzähler Count  [%d]"                   (Group)                  {channel="mqtt:topic:Szaehler:szCount"}
+Number   Stromzaehler_Total         "Stromzähler Total [%d]"                   (Group)                  {channel="mqtt:topic:Szaehler:szTotal"}
+Number   Stromzaehler_Time         "Stromzähler Time [%d]"                   (Group)                  {channel="mqtt:topic:Szaehler:szTime"}
