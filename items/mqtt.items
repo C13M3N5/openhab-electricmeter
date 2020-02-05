@@ -1,4 +1,8 @@
 Group    Group
+Switch   Stromzaehler_kW_newState     "Stromzähler neuer Zählerstand"              (Group)
+
 Number   Stromzaehler_Count         "Stromzähler Count  [%d]"                   (Group)                  {channel="mqtt:topic:Szaehler:szCount"}
 Number   Stromzaehler_Total         "Stromzähler Total [%d]"                   (Group)                  {channel="mqtt:topic:Szaehler:szTotal"}
 Number   Stromzaehler_Time         "Stromzähler Time [%d]"                   (Group)                  {channel="mqtt:topic:Szaehler:szTime"}
+
+Number   EG_HWR_Stromzaehler_kW            "Stromzähler kWh  [%.2f]"                   (Group)   
