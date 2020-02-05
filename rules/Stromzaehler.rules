@@ -1,0 +1,22 @@
+rule "electricmeter Measurement"
+when
+    Item Stromzaehler_Count changed 
+then
+    var Number Umdrehung = 120
+    var Number count = Stromzaehler_Count.state as Number
+    var Number KWnew = (count / 2) / Umdrehung
+    var Number StromzaehlerkW = Stromzaehler_kW.state as Number
+    StromzaehlerkW = StromzaehlerkW + KWnew
+
+    Stromzaehler_kW.postUpdate(StromzaehlerkW)
+
+end
+
+rule "electricmeter Update"
+when
+    Item Stromzaehler_kW_newState changed to ON
+then
+    var Number aktuellerStand = 111111.22
+    Stromzaehler_kW.postUpdate(aktuellerStand)
+
+end
