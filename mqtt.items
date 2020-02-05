@@ -1,0 +1,3 @@
+Number   EG_HWR_Stromzaehler_Count         "Stromzähler Count  [%d]"                   (gEG_HWR)                  {channel="mqtt:topic:Szaehler:szCount"}
+Number   EG_HWR_Stromzaehler_Total         "Stromzähler Total [%d]"                   (gEG_HWR)                  {channel="mqtt:topic:Szaehler:szTotal"}
+Number   EG_HWR_Stromzaehler_Time         "Stromzähler Time [%d]"                   (gEG_HWR)                  {channel="mqtt:topic:Szaehler:szTime"}
