@@ -1,0 +1,10 @@
+//Bridge mqtt:broker:broker "MQTTBroker" [ host="127.0.0.1", port=1883, secure=false, username="mqttuser", password="mqttpasswort" ] 
+Bridge mqtt:broker:broker "MQTTBroker" [ host="127.0.0.1", port=1883, secure=false ] 
+{ 
+	Thing mqtt:topic:Szaehler "Stromzaehler" { 
+		Channels: 
+            Type number : szCount "Stromzähler Count" [ stateTopic="/Stromzaehler/Stromzaehler/Count" ] 
+            Type number : szTotal "Stromzähler Total" [  stateTopic="/Stromzaehler/Stromzaehler/Total"  ] 
+            Type number : szTime "Stromzähler Time" [  stateTopic="/Stromzaehler/Stromzaehler/Time" ] 
+	} 
+}
